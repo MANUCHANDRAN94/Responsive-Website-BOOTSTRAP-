@@ -1,129 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>WDC</title>
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body data-spy="scroll" data-target="#navbarResponsive">
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
     <!-- start home section -->
     <div id="home">
-      <!-- Navigation start -->
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <!-- Navigation start -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-md">
+                <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <img src="./assets/menu.svg" alt="toggle-icon" class="toggle1" />
+                    <img id="navbarResponsive" data-toggle="collapse" src="./assets/menu 2.svg" alt="toggle-icon" />
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-md-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                            <div class="menu-underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Services</a>
+                            <div class="menu-underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#feature">Features</a>
+                            <div class="menu-underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Works</a>
+                            <div class="menu-underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tech-stack">Tech Stack</a>
+                            <div class="menu-underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                            <div class="menu-underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                            <div class="menu-underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                            <div class="menu-underline"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation end -->
+
+        <!-- Start landing page section -->
+        <div class="landing">
+            <div class="home-wrap">
+                <div class="home-inner"></div>
+            </div>
+        </div>
+
         <div class="container-md">
-          <a class="navbar-brand" href="#"
-            ><img src="./assets/logo.png" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-          >
-            <img src="./assets/menu.svg" alt="toggle-icon" class="toggle1" />
-            <img
-              id="navbarResponsive"
-              data-toggle="collapse"
-              src="./assets/menu 2.svg"
-              alt="toggle-icon"
-            />
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-md-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-                <div class="menu-underline"></div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#service">Services</a>
-                <div class="menu-underline"></div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#feature">Features</a>
-                <div class="menu-underline"></div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#work">Works</a>
-                <div class="menu-underline"></div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tech-stack">Tech Stack</a>
-                <div class="menu-underline"></div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#team">Team</a>
-                <div class="menu-underline"></div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
-                <div class="menu-underline"></div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-                <div class="menu-underline"></div>
-              </li>
-            </ul>
-          </div>
+            <div class="caption">
+                <h1>Web Development Company</h1>
+                <h3>
+                    Empowering startups with our innovative web development services
+                </h3>
+                <a class="btn btn-outline-light btn-lg rounded-pill" href="#contact">Talk to us</a>
+            </div>
         </div>
-      </nav>
-      <!-- Navigation end -->
-
-      <!-- Start landing page section -->
-      <div class="landing">
-        <div class="home-wrap">
-          <div class="home-inner"></div>
-        </div>
-      </div>
-
-      <div class="container-md">
-        <div class="caption">
-          <h1>Web Development Company</h1>
-          <h3>
-            Empowering startups with our innovative web development services
-          </h3>
-          <a class="btn btn-outline-light btn-lg rounded-pill" href="#contact"
-            >Talk to us</a
-          >
-        </div>
-      </div>
-      <!-- End landing page section -->
+        <!-- End landing page section -->
     </div>
     <!-- End home section -->
 
     <!-- start Services section -->
     <section id="service" class="offset">
-      <div class="jumbotron">
-        <div class="narrow text-center">
-          <div class="col-12">
-            <h3 class="heading ">Our Services</h3>
-            <div class="heading-underline"></div>
-            <p>For planning to the final launch, our services benefit startups and enterprises alike without having to go overboard on development costs.</p>
-          </div>
+        <div class="container-md">
+            <div class="narrow text-center mt-5">
+                <div class="col-12">
+                    <h3 class="heading">Our Services</h3>
+                    <div class="heading-underline"></div>
+                    <p>
+                        For planning to the final launch, our services benefit startups
+                        and enterprises alike without having to go overboard on
+                        development costs.
+                    </p>
+                </div>
+            </div>
+            <div class="container-md">
+                <div class="row text-center">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <div class="card-image card-image1 my-auto p-2 mx-auto rounded-circle">
+                                    <img src="./assets/Web Application.svg" alt="" />
+                                </div>
+                                <h4 class="card-title my-1">Web Application</h4>
+                                <p class="card-text mt-3 mx-auto">
+                                    We use the latest frontend and backend technologies to build
+                                    super fast web apps that your customers will love.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <div class="card-image card-image2 my-auto p-2 mx-auto rounded-circle">
+                                    <img src="./assets/Mobile Application.svg" alt="" />
+                                </div>
+                                <h4 class="card-title my-1">Mobile Application</h4>
+                                <p class="card-text mt-3">
+                                    Wwe build performance mobile apps that can run on multiple
+                                    platforms using technologies like React Native and Flutter.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <div class="card-image card-image3 my-auto p-2 mx-auto rounded-circle">
+                                    <img src="./assets/Cloud Architecture.svg" alt="" />
+                                </div>
+                                <h4 class="card-title my-1">Cloud Architecture</h4>
+                                <p class="card-text mt-3">
+                                    We use serverless technologies like AWS and Google Cloud
+                                    build highly secure and scalable applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <div class="card-image card-image4 my-auto p-2 mx-auto rounded-circle">
+                                    <img src="./assets/Idea to Full Digital Product.svg" alt="" />
+                                </div>
+                                <h4 class="card-title my-1">Idea to Full Digital Product</h4>
+                                <p class="card-text mt-3">
+                                    transform your ideas to digital products that sell. We help
+                                    startups and enterprises build better products and services
+                                    thereby enhancing customer satisfication and revenues.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <div class="card-image card-image5 my-auto p-2 mx-auto rounded-circle">
+                                    <img src="./assets/MVP Development.svg" alt="" />
+                                </div>
+                                <h4 class="card-title my-1">MVP Development</h4>
+                                <p class="card-text mt-3">
+                                    Our team of architects, developers and designers will help
+                                    you get your concepts up and running in no time and help you
+                                    get the crusial first to market advantages.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <div class="card-image card-image6 my-auto p-2 mx-auto rounded-circle">
+                                    <img src="./assets/IoT Architecture.svg" alt="" />
+                                </div>
+                                <h4 class="card-title my-1">IoT Architecture</h4>
+                                <p class="card-text mt-3">
+                                    Discover the untapped potential in your bussiness by
+                                    adopting the latest IoT solutions to automate processes and
+                                    boosts your ROI.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="narrow text-center mb-4">
+                <div class="col-12 pb-5">
+                    <h3 class="heading">Got an awsome idea?</h3>
+                    <div class="heading-underline"></div>
+                    <p>
+                        Then why wait?<br />We have the perfect team to transform your
+                        ideas into digital products
+                    </p>
+                    <a class="btn btn-outline-light btn-lg rounded-pill" href="#contact">LET'S START</a>
+                </div>
+            </div>
         </div>
-
-        <div class="row text-center"></div>
-
-      </div>
     </section>
     <!-- End Services section -->
 
     <!-- start Feature section -->
-    <div id="feature" class="offset"></div>
+    <div id="feature" class="offset mb-2">
+
+        <div class="narrow text-center">
+            <div class="col-12">
+                <h3 class="heading">Why choose us?</h3>
+                <div class="heading-underline"></div>
+                <p>
+                    We foucs our client success when building super fast web applications.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-md">
+            <div class="row ">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image ">
+                                <img src="./assets/We Listen and We Pitch In.svg" alt="" />
+                            </div>
+                            <h4 class="card-title my-1">We Listen and We Pitch In</h4>
+                            <p class="card-text mt-3">
+                                We take the time to knoe your business to understand what makes it unuique so thet we can come up with solutions best suited to your needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image ">
+                                <img src="./assets/Code Quality.svg" alt="" />
+                            </div>
+                            <h4 class="card-title my-1">Code Quality</h4>
+                            <p class="card-text mt-3">
+                                We have a goood code quality process that ensures better results and reduces risks for your business and delays in launch.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image ">
+                                <img src="./assets/Awesome Team.svg" alt="" />
+                            </div>
+                            <h4 class="card-title my-1">Awsome Team</h4>
+                            <p class="card-text mt-3">
+                                Right from the get go our explosive team of architects, developers and team leaders work together to bring you the best tech solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image ">
+                                <img src="./assets/Communication.svg" alt="" />
+                            </div>
+                            <h4 class="card-title my-1">Communication</h4>
+                            <p class="card-text mt-3">
+                                Communication is a key part of our success. You'll be updated daily on project progress. We alwys opens to suggestion and clearing any queries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
     <!-- End Feature section -->
 
     <!-- start Work section -->
@@ -149,20 +311,15 @@
     <!-- Optional JavaScript -->
     <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

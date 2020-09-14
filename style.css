@@ -2,9 +2,32 @@
 :root {
   --color-pink: #f97794;
   --heading-color: #263238;
+  --subheading-color:#273339;
   --font-color: #6d7e85;
   --font-color-white: #f2f2f3;
 }
+
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: .5rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+
 body {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
@@ -13,9 +36,9 @@ body {
 /* .offset::before{
   display: block;
   content: "";
-  height: 4rem;
-  margin-top: -4rem;
-} */
+  /* height: 4rem; */
+/* margin-top: -4rem; */
+/* } */
 /*--- Navigation ---*/
 .navbar {
   text-transform: uppercase;
@@ -97,12 +120,12 @@ body {
   font-weight: 400;
   color: var(--font-color-white);
   text-shadow: 0.1rem 0.1rem 0.5rem black;
-  padding-bottom: 1.6rem;
 }
 .btn-group-lg > .btn,
 .btn-lg {
   border: none;
   text-transform: uppercase;
+  margin-top: 2em;
   padding: 0.6em 2em;
   font-size: 1.1rem;
   background-color: var(--color-pink);
@@ -140,13 +163,14 @@ body {
 
 /*--- Course Page ---*/
 
-#service  {
+#service {
+background-color: ;
   background-image: url(./assets/BG/bg-1.svg) !important;
   background-position: center;
-  /* height: 110vw; */
+  background-repeat: no-repeat;
 }
 .narrow {
-  width: 55%;
+  width: 80%;
   margin: 0.5rem auto;
 }
 .narrow h3 {
@@ -155,12 +179,53 @@ body {
   font-weight: 600;
   color: var(--heading-color);
 }
-.narrow p {
-  font-size: 0.8em;
+p {
+  font-size: 0.7em;
+  margin-bottom: 0;
+}
+.card{
+    min-height: 11rem;
+}
+.card p{
+    margin:-1em auto auto;
+    width: 100%;
+}
+.card:hover{
+border: 2px solid var(--color-pink);
+}
+.card-image{
+    width: 60px;
+    height: 45px;
+}
+.card-image1{
+    background-color: #FAE3E3;
+}
+.card-image2{
+    background-color: #FFF5F7;
+}
+.card-image3{
+    background-color: #E3EAFA;
+}
+.card-image4{
+    background-color: #F3EAD6;
+}
+.card-image5{
+    background-color: #E7E6FF;
+}
+.card-image6{
+    background-color: #DEDEDE;
 }
 .heading-underline {
   width: 8rem;
   height: 0.15rem;
   background-color: var(--color-pink);
-  margin: 1em auto 1em;
+  margin: .5em auto 1em;
+}
+.card h4{
+    font-size: 1em;
+    color: var(--subheading-color);
+    font-weight: 600;
+}
+#feature .card{
+    border: none;
 }
