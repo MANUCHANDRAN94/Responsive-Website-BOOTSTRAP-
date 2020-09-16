@@ -1,11 +1,24 @@
-// $(function () {
 
-//     $(".toggle1").on("click", function() {
-//     alert("vcx");
-//     // $(".toggle1").addClass("d-none");
-//     });
+// Navbar button toggle
+    $(".navbar-toggler").on("click", function() {
+    $(".toggle1").toggle("d-none");
+    });
 
-// });
+    $(".nav-link").on("click" , function(){
+        $('.collapse.navbar-collapse , .toggle2').collapse('hide')
+        $(".toggle1").toggle("d-inline");
+    });
+
+
+
+// Service card toggle
+$(".collapse").on('show.bs.collapse', function () {
+    $(this).next().find(".svg-inline--fa").removeClass("fa-chevron-down").addClass("fa-chevron-up")
+}).on('hide.bs.collapse', function () {
+    $(this).next().find(".svg-inline--fa").removeClass("fa-chevron-up").addClass("fa-chevron-down")
+});
+
+
 
 // carousel for portfolio
 $('.owl-portfolio').owlCarousel({
